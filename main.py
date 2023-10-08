@@ -76,7 +76,7 @@ def main():
     # Minta pengguna memasukkan API key OpenAI
     st.session_state.openai_api_key = st.text_input("Enter your OpenAI API key:")
 
-    user_question = st.text_input("Ask a question about your documents:")
+    user_question = st.text_input("Ask a question/recommendations/reference about your NASA technical Standards:")
     if user_question:
         handle_userinput(user_question)
 
