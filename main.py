@@ -63,7 +63,7 @@ def handle_userinput(user_question):
 
 
 def main():
-    st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
+    st.set_page_config(page_title="Chat with multiple NASA Documents", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -71,7 +71,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Chat with multiple PDFs :books:")
+    st.header("Chat with multiple NASA documents :books:")
 
     # Minta pengguna memasukkan API key OpenAI
     st.session_state.openai_api_key = st.text_input("Enter your OpenAI API key:")
